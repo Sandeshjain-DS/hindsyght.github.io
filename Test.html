@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+   <body>
+      <div id="webchat" role="main"></div>
+      <script src="https://cdn.botframework.com/botframework-webchat/latest/webchat.js"></script>
+      <script>
+
+         // Set style options.
+         const styleOptions = {
+            botAvatarInitials: 'Bot',
+            userAvatarInitials: 'User'
+         };
+
+         window.WebChat.renderWebChat(
+            {
+               directLine: window.WebChat.createDirectLine({
+                  token: 'Ie3a0_YO8vE.n8jSq5jxkcNJQu802_GwTGR9KPiTtCKlT5D-DydLrCU'
+               }),
+               userID: 'Amit',
+               username: 'Amit',
+               locale: 'en-US',
+               styleOptions
+            },
+            document.getElementById('webchat')
+         );
+      </script>
+   </body>
+</html>
